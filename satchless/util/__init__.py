@@ -1,7 +1,6 @@
 from decimal import Decimal
 from django.http import HttpResponse
 from django.utils import simplejson
-from collections import namedtuple
 
 def decimal_format(value, min_decimal_places=0):
     decimal_tuple = value.as_tuple()
