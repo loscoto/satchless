@@ -71,5 +71,5 @@ class DeadParrotVariantForm(BaseVariantForm):
         return self._get_variant_queryset().get()
 
 
-from .product import *
-from .pricing import *
+from satchless.product.tests.product import *
+from satchless.product.tests.pricing import *
