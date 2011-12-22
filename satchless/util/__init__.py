@@ -4,7 +4,7 @@ from django.utils import simplejson
 
 def decimal_format(value, min_decimal_places=0):
     decimal_tuple = value.as_tuple()
-    have_decimal_places = -decimal_tuple.exponent
+    have_decimal_places = -decimal_tuple[2]
     digits = list(decimal_tuple[1])
     while have_decimal_places < min_decimal_places:
         digits.append(0)
