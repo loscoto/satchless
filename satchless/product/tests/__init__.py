@@ -52,7 +52,7 @@ class DeadParrotVariant(ParrotVariant):
                 self.get_color_display(), self.product.slug)
 
 
-@variant_form_for_product(DeadParrot)
+#@variant_form_for_product(DeadParrot)
 class DeadParrotVariantForm(BaseVariantForm):
     color = forms.CharField(max_length=10)
     looks_alive = forms.BooleanField()
